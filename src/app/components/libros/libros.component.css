@@ -1,0 +1,19 @@
+.unidades {
+    position: absolute;
+    top: 400px;
+    left: 20px
+}
+
+.unidades img {
+    display: flex;
+    width: 160px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.unidades .contenido {
+    margin-bottom: 120px;
+}
