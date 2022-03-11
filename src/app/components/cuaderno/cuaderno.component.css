@@ -22,7 +22,7 @@
     position: absolute;
     top: 30px; right: 0; bottom: 30px; left: 0;
     padding-left: 50px;
-    background: linear-gradient(transparent, transparent 24px, #91D1D3 24px); /*Estos dos pal tamaño de letra, dos menos que el de abajo (pa que las líneas se separen pues)*/
+    background: linear-gradient(transparent, transparent 24px, hsla(182, 43%, 70%, 0.712) 24px); /*Estos dos pal tamaño de letra, dos menos que el de abajo (pa que las líneas se separen pues)*/
     background-size: 26px 26px;
 }
 
@@ -40,7 +40,26 @@
     color: #231c38;
     font-family: 'Handlee', cursive;
     font-weight: bold;
-    font-size: 18px; /* Tamaño de letra 10 pixeles menos que el de paper content*/
+    font-size: 1.9vh; /* Tamaño de letra 10 pixeles menos que el de paper content*/
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.paper-content h3{
+    width: 100%;
+    max-width: 100%;
+    line-height: 26px; /* Este del tamaño del background size del paper content*/
+    margin-top: 0;
+    margin-bottom: 26px; /* Igual que line-height*/
+    padding-right: 15px;
+    text-align: justify;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: #231c38;
+    font-family: 'Handlee', cursive;
+    font-weight: bold;
+    font-size: 1.7vh; /* Tamaño de letra 10 pixeles menos que el de paper content*/
     box-sizing: border-box;
     z-index: 1;
 }
@@ -58,7 +77,73 @@
     background: transparent;
     color: #231c38;
     font-family: 'Handlee', cursive;
-    font-weight: bold;
+    font-size: 1.5vh; /* Tamaño de letra 10 pixeles menos que el de paper content*/
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.paper-content table {
+    width: 90%;
+    margin-top: 0;
+    margin-bottom: 28px; /* Este del tamaño del background size del paper content*/
+    margin-left: auto;
+    margin-right: auto;
+    background: #fafafa;
+    border-collapse: collapse;
+    color: #231c38;
+    font-family: 'Handlee', cursive;
+    font-size: 1.5vh; /* Tamaño de letra 10 pixeles menos que el de paper content*/
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.paper-content caption, .paper-content figcaption {
+    font-size: 1.3vh; /* Tamaño de letra 10 pixeles menos que el de paper content*/
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.paper-content figcaption {
+    text-align: center;
+}
+
+.paper-content th {
+    border: 1px solid black;
+    padding-bottom: 4px;
+}
+
+.paper-content td {
+    border: 1px solid black;
+    padding-top: 4px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.paper-content td.centrado {
+    text-align: center;
+}
+
+.paper-content ul {
+    margin-top: 0;
+    margin-bottom: 26px; /* Este del tamaño del background size del paper content*/
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.paper-content li{
+    width: 100%;
+    max-width: 100%;
+    line-height: 26px; /* Este del tamaño del background size del paper content*/
+    margin-top: 0;
+    margin-bottom: 0px; /* Igual que line-height*/
+    padding-right: 15px;
+    text-align: justify;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: #231c38;
+    font-family: 'Handlee', cursive;
     font-size: 14px; /* Tamaño de letra 10 pixeles menos que el de paper content*/
     box-sizing: border-box;
     z-index: 1;
@@ -91,6 +176,38 @@
     padding-top: 30%;
     font-size: 210%;
 }
+
+.page img {
+    display: block;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    image-rendering: -moz-crisp-edges;         /* Firefox */
+    image-rendering:   -o-crisp-edges;         /* Opera */
+    image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
+}
+
+.page img.derecha {
+    transform: translateX(-1.5vw);
+}
+
+.page figure {
+    margin-bottom: 3vh;
+}
+
+.pegado {
+    margin-bottom: 0px !important;
+}
+
+.page-content .azul {
+    color: #7e80e6;
+}
+
 .page.page-cover.page-cover-top {
     box-shadow: inset 0px 0 30px 0px rgba(36, 10, 3, 0.5), -2px 0 5px 2px rgba(0, 0, 0, 0.4);
 }
@@ -147,4 +264,3 @@
     background-color: #f2e8d9;
     border: solid 1px #998466;
 }
-
